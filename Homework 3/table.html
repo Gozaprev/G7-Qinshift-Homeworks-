@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DON'T GET ANGRY MAN GAME</title>
+    <style>
+        table {
+            width: 550px; /* Set a specific width for the table */
+            /*height: 550px; /* Set a specific height for the table */
+            /* border-collapse: collapse; */
+            margin: 50px auto; /* Shows the table in the center of the window*/
+            
+        }
+        td {
+            width: 50px;
+            /* height: 50px; */
+            border: 1px solid #000;
+            text-align: center;
+            vertical-align: middle;
+            
+        }
+        .cell-empty {
+            background-color: white;
+        }
+        .circle {
+            width: 50px;  /* Adjust the circle size */
+            height: 50px;
+            border-radius: 50%;  /* Makes the element circular */
+            background-color: #00bfff; /* Blue color for the circle */
+            margin: auto;  /* Center the circle inside the cell */
+            /* text-align: center; */
+            display: flex; /* or inline-flex */
+            align-items: center; 
+            justify-content: center;
+            /* padding: 4px 3px 0 3px; */
+        }
+        /* .circle-danger {
+            background-color: #ff6347; Red color for dangerous state
+        }
+        .circle-occupied {
+            background-color: #32cd32; Green color for occupied state
+        } */
+    </style>
+</head>
+<body>
+
+    <h2 style="text-align:center;">DON'T GET ANGRY MAN GAME</h2>
+    
+    <table border="4">
+        <tbody>
+            <!-- Create the 11 rows and 11 columns with circles -->
+            <tr>
+                <td class="cell-empty" style=background-color:red></td>
+                <td class="cell-empty" style=background-color:red></td>
+                <td class="cell-empty" colspan="2" style="border-bottom-style:hidden"></td>
+                <td class="cell-empty"><div class="circle"></div></td>
+                <td class="cell-empty"><div class="circle"></div></td>
+                <td class="cell-empty"><div class="circle">Start</div></td>
+                <td class="cell-empty" colspan="2" style="border-bottom-style:hidden"></td>
+                <!-- <td class="cell-empty"><div class="circle"></div></td> -->
+                <!-- <td class="cell-empty"><div class="circle"></div></td> -->
+                <td class="cell-empty" style=background-color:blue></td>
+                <td class="cell-empty" style=background-color:blue></td>
+            </tr>
+            <tr>
+                <td class="cell-empty" style=background-color:red></td>
+                <td class="cell-empty" style=background-color:red></td>
+                <td class="cell-empty" colspan="2" style="border-top-style:hidden"></td>
+                <td class="cell-empty"><div class="circle"></div></td>
+                <td class="cell-empty" style=background-color:blue></td>
+                <td class="cell-empty"><div class="circle"></div></td>
+                <td class="cell-empty" colspan="2" style="border-top-style:hidden"></td>
+                <!-- <td class="cell-empty"><div class="circle"></div></td> -->
+                <!-- <td class="cell-empty"><div class="circle"></div></td> -->
+                <td class="cell-empty" style=background-color:blue></td>
+                <td class="cell-empty" style=background-color:blue></td>
+            </tr>
+            <tr>
+                <td class="cell-empty" colspan="4" style="border-bottom-style:hidden"></td>
+                <!-- <td class="cell-empty"><div class="circle"></div></td> -->
+                <!-- <td class="cell-empty"><div class="circle"></div></td> -->
+                <!-- <td class="cell-empty"><div class="circle"></div></td> -->
+                <td class="cell-empty"><div class="circle"></div></td>
+                <td class="cell-empty" style=background-color:blue></td>
+                <td class="cell-empty"><div class="circle"></div></td>
+                <td class="cell-empty" colspan="4" style="border-bottom-style:hidden"></td>
+                <!-- <td class="cell-empty"><div class="circle"></div></td> -->
+                <!-- <td class="cell-empty"><div class="circle"></div></td> -->
+                <!-- <td class="cell-empty"><div class="circle"></div></td> -->
+            </tr>
+            <tr>
+                <td class="cell-empty" colspan="4" style="border-top-style:hidden"></td>
+                <!-- <td class="cell-empty"><div class="circle"></div></td> -->
+                <!-- <td class="cell-empty"><div class="circle"></div></td> -->
+                <!-- <td class="cell-empty"><div class="circle"></div></td> -->
+                <td class="cell-empty"><div class="circle"></div></td>
+                <td class="cell-empty" style=background-color:blue></td>
+                <td class="cell-empty"><div class="circle"></div></td>
+                <td class="cell-empty" colspan="4" style="border-top-style:hidden"></td>
+                <!-- <td class="cell-empty"><div class="circle"></div></td> -->
+                <!-- <td class="cell-empty"><div class="circle"></div></td> -->
+                <!-- <td class="cell-empty"><div class="circle"></div></td> -->
+            </tr>
+            <tr>
+                <td class="cell-empty"><div class="circle">Start</div></td>
+                <td class="cell-empty"><div class="circle"></div></td>
+                <td class="cell-empty"><div class="circle"></div></td>
+                <td class="cell-empty"><div class="circle"></div></td>
+                <td class="cell-empty"><div class="circle"></div></td>
+                <td class="cell-empty" style=background-color:blue></td>
+                <td class="cell-empty"><div class="circle"></div></td>
+                <td class="cell-empty"><div class="circle"></div></td>
+                <td class="cell-empty"><div class="circle"></div></td>
+                <td class="cell-empty"><div class="circle"></div></td>
+                <td class="cell-empty"><div class="circle"></div></td>
+            </tr>
+            <tr>
+                <td class="cell-empty"><div class="circle"></div></td>
+                <td class="cell-empty" style=background-color:red></td>
+                <td class="cell-empty" style=background-color:red></td>
+                <td class="cell-empty" style=background-color:red></td>
+                <td class="cell-empty" style=background-color:red></td>
+                <td class="cell-empty" style=background-color:white></td>
+                <td class="cell-empty" style=background-color:green></td>
+                <td class="cell-empty" style=background-color:green></td>
+                <td class="cell-empty" style=background-color:green></td>
+                <td class="cell-empty" style=background-color:green></td>
+                <td class="cell-empty"><div class="circle"></div></td>
+            </tr>
+            <tr>
+                <td class="cell-empty"><div class="circle"></div></td>
+                <td class="cell-empty"><div class="circle"></div></td>
+                <td class="cell-empty"><div class="circle"></div></td>
+                <td class="cell-empty"><div class="circle"></div></td>
+                <td class="cell-empty"><div class="circle"></div></td>
+                <td class="cell-empty" style=background-color:yellow></td>
+                <td class="cell-empty"><div class="circle"></div></td>
+                <td class="cell-empty"><div class="circle"></div></td>
+                <td class="cell-empty"><div class="circle"></div></td>
+                <td class="cell-empty"><div class="circle"></div></td>
+                <td class="cell-empty"><div class="circle">Start</div></td>
+            </tr>
+            <tr>
+                <td class="cell-empty" colspan="4" style="border-bottom-style:hidden"></td>
+                <!-- <td class="cell-empty"><div class="circle"></div></td> -->
+                <!-- <td class="cell-empty"><div class="circle"></div></td> -->
+                <!-- <td class="cell-empty"><div class="circle"></div></td> -->
+                <td class="cell-empty"><div class="circle"></div></td>
+                <td class="cell-empty" style=background-color:yellow></td>
+                <td class="cell-empty"><div class="circle"></div></td>
+                <td class="cell-empty" colspan="4" style="border-bottom-style:hidden"></td>
+                <!-- <td class="cell-empty"><div class="circle"></div></td> -->
+                <!-- <td class="cell-empty"><div class="circle"></div></td> -->
+                <!-- <td class="cell-empty"><div class="circle"></div></td> -->
+            </tr>
+            <tr>
+                <td class="cell-empty" colspan="4" style="border-top-style:hidden"></td>
+                <!-- <td class="cell-empty"><div class="circle"></div></td> -->
+                <!-- <td class="cell-empty"><div class="circle"></div></td> -->
+                <!-- <td class="cell-empty"><div class="circle"></div></td> -->
+                <td class="cell-empty"><div class="circle"></div></td>
+                <td class="cell-empty" style=background-color:yellow></td>
+                <td class="cell-empty"><div class="circle"></div></td>
+                <td class="cell-empty" colspan="4" style="border-top-style:hidden"></td>
+                <!-- <td class="cell-empty"><div class="circle"></div></td> -->
+                <!-- <td class="cell-empty"><div class="circle"></div></td> -->
+                <!-- <td class="cell-empty"><div class="circle"></div></td> -->
+            </tr>
+            <tr>
+                <td class="cell-empty" style=background-color:yellow></td>
+                <td class="cell-empty" style=background-color:yellow></td>
+                <td class="cell-empty" colspan="2" style="border-bottom-style:hidden"></td>
+                <td class="cell-empty"><div class="circle"></div></td>
+                <td class="cell-empty" style=background-color:yellow></td>
+                <td class="cell-empty"><div class="circle"></div></td>
+                <td class="cell-empty" colspan="2" style="border-bottom-style:hidden"></td>
+                <!-- <td class="cell-empty"><div class="circle"></div></td> -->
+                <!-- <td class="cell-empty"><div class="circle"></div></td> -->
+                <td class="cell-empty" style=background-color:green></td>
+                <td class="cell-empty" style=background-color:green></td>
+            </tr>
+            <tr>
+                <td class="cell-empty" style=background-color:yellow></td>
+                <td class="cell-empty" style=background-color:yellow></td>
+                <td class="cell-empty" colspan="2" style="border-top-style:hidden"></td>
+                <td class="cell-empty"><div class="circle">Start</div></td>
+                <td class="cell-empty"><div class="circle"></div></td>
+                <td class="cell-empty"><div class="circle"></div></td>
+                <td class="cell-empty" colspan="2" style="border-top-style:hidden"></td>
+                <!-- <td class="cell-empty"><div class="circle"></div></td> -->
+                <!-- <td class="cell-empty"><div class="circle"></div></td> -->
+                <td class="cell-empty" style=background-color:green></td>
+                <td class="cell-empty" style=background-color:green></td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
