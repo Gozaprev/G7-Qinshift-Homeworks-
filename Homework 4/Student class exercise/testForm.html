@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testform</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0px 0px 0px 0px;
+
+        }
+
+        /* form {
+            width: 300px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+        } */
+
+        /* fieldset {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 0;
+        } */
+
+        /* legend {
+            font-weight: bold;
+            font-size: 1.1em;
+            padding: 0 5px;
+        } */
+
+        .header {
+           
+            /* padding: 5px; */
+            margin-bottom: 20px;
+            
+            width: 100%;
+            text-align: left;
+            background-color: #6c8df7;
+            color: black;
+            font-size: 30px;
+            border-bottom: 1px solid black;
+
+        }
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #6c8df7;
+            /* color: white; */
+            text-align: right;
+            border-top: 1px solid black;
+            padding-top: 2px;
+        }
+
+        label {
+            display: inline-block;
+            width: 80px;
+            margin-bottom: 10px;
+            vertical-align: top;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        select,
+        textarea {
+            /* width: 180px;
+            padding: 5px; */
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 5px;
+            vertical-align: middle;
+        }
+
+        textarea {
+            resize: none;
+            height: 60px;
+        }
+
+        button {
+            padding: 5px 10px;
+            /* margin-top: 10px; */
+            margin-right: 5px;
+            border: 1px solid #ccc;
+            /* background-color: #f2f2f2; */
+            cursor: pointer;
+            border-radius: 3px;
+        }
+
+        button[type="submit"] {
+            color: white;
+            background-color: #0bee57;
+            border: none;
+        }
+
+        button[type="reset"] {
+            background-color: #f2f2f2;
+            color: black;
+            border: 1px solid #ccc;
+        }
+
+        .row {
+            display: -ms-flexbox; 
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            /* margin: 0 -16px; */
+        }
+
+        /*.col-25 {
+            -ms-flex: 25%; 
+            flex: 25%;
+        } 
+        */
+        
+        
+       
+        .col-50 {
+            -ms-flex: 50%; 
+             flex: 50%;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- <form> -->
+        <!-- <fieldset> -->
+            <!-- <legend>Testform</legend> -->
+
+            <div class="header" style="background-color: #6c8df7">
+                Testform
+            </div>
+
+            <div class="row">
+                <div class="col-50">
+                    <label for="name">Name</label>
+                        <!-- <div class="col-25">
+                        </div> -->
+                    <input type="text" id="name" name="name" style="margin-left: 50px;"><br>
+                </div>
+                <!-- <div class="col-50">
+                    <input type="text" id="name" name="name"><br>
+                </div> -->
+            </div>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" style="margin-left: 50px;"><br>
+
+            <label>Gender</label>
+            <input type="radio" id="male" name="gender" value="male" style="margin-left: 50px;">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female" style="margin-left: 134px;">
+            <label for="female">Female</label><br><br>
+
+            <label for="continent">Continent</label>
+            <select id="continent" name="continent" style="margin-left: 50px;">
+                <option value="" selected>Please select...</option>
+                <option value="">Select a continent</option>
+                <option value="asia">Asia</option>
+                <option value="europe">Europe</option>
+                <option value="africa">Africa</option>
+                <option value="north_america">North America</option>
+                <option value="south_america">South America</option>
+                <option value="australia">Australia</option>
+                <option value="antarctica">Antarctica</option>
+            </select><br><br>
+
+            <label>Meals</label>
+            <input type="checkbox" id="breakfast" name="meals" value="breakfast" style="margin-left: 50px;">
+            <label for="breakfast">breakfast</label><br>
+            <input type="checkbox" id="lunch" name="meals" value="lunch" style="margin-left: 134px;">
+            <label for="lunch">lunch</label><br>
+            <input type="checkbox" id="dinner" name="meals" value="dinner" style="margin-left: 134px;">
+            <label for="dinner">dinner</label><br><br>
+
+            <label for="remark">Remark</label>
+            <textarea id="remark" name="remark" rows="5" cols="50" style="margin-left: 50px;"></textarea><br>
+
+            <div class="footer">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+            
+        <!-- </fieldset> -->
+    <!-- </form> -->
+</body>
+</html>

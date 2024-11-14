@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dado Tea Lunch Special</title>
+    
+</head>
+<body>
+    <h1>Dado Tea Lunch Special</h1>
+    <p>Monday through Friday<br>
+       11am — 3pm<br>
+       $9.95 plus tax</p>
+    <p>Includes sandwich, snack, and drink.</p>
+
+    <form>
+        <fieldset>
+            <legend>Order Information</legend>
+            <br/>
+            
+
+            <label for="name"><strong>Name</strong></label><br>
+            <input type="text" id="name" name="name"><br><br>
+            
+            <input type="radio" id="here" name="order_type" value="Here">
+            <label for="here">Here</label><br>
+            <input type="radio" id="to_go" name="order_type" value="To Go">
+            <label for="to_go">To Go</label>
+
+            <br/>
+            <br/>
+        </fieldset>
+
+        <fieldset>
+            <legend>Sandwiches</legend>
+
+            <p><strong>Monday</strong><br>
+            <input type="radio" id="monday1" name="sandwich" value="Tomato Mozzarella">
+            <label for="monday1">Tomato Mozzarella</label><br>
+            <input type="radio" id="monday2" name="sandwich" value="Chicken Salad">
+            <label for="monday2">Chicken Salad</label></p>
+
+            <p><strong>Tuesday</strong><br>
+            <input type="radio" id="tuesday1" name="sandwich" value="Greek Salad Wrap">
+            <label for="tuesday1">Greek Salad Wrap</label><br>
+            <input type="radio" id="tuesday2" name="sandwich" value="Toto Wrap">
+            <label for="tuesday2">Toto Wrap</label></p>
+
+            <p><strong>Wednesday</strong><br>
+            <input type="radio" id="wednesday1" name="sandwich" value="Red Pepper Hummus">
+            <label for="wednesday1">Red Pepper Hummus</label><br>
+            <input type="radio" id="wednesday2" name="sandwich" value="Roasted Turkey">
+            <label for="wednesday2">Roasted Turkey</label></p>
+
+            <p><strong>Thursday</strong><br>
+            <input type="radio" id="thursday1" name="sandwich" value="Carrot-Ginger Hummus Wrap">
+            <label for="thursday1">Carrot-Ginger Hummus Wrap</label><br>
+            <input type="radio" id="thursday2" name="sandwich" value="Egg Salad">
+            <label for="thursday2">Egg Salad</label></p>
+
+            <p><strong>Friday</strong><br>
+            <input type="radio" id="friday1" name="sandwich" value="Dado Wrap">
+            <label for="friday1">Dado Wrap</label><br>
+            <input type="radio" id="friday2" name="sandwich" value="Tuna Salad">
+            <label for="friday2">Tuna Salad</label></p>
+
+            <hr/>
+
+            <input type="checkbox" id="gluten_free" name="gluten_free" value="Gluten Free Bread">
+            <label for="gluten_free">Gluten Free Bread (75¢ extra)</label>
+            <br/>
+            <br/>
+        </fieldset>
+
+        <fieldset>
+            <legend>Snack</legend>
+            <p><strong>Snacks</strong><br>
+            <input type="radio" id="apple" name="snack" value="Apple">
+            <label for="apple">Apple</label><br>
+            <input type="radio" id="banana" name="snack" value="Banana">
+            <label for="banana">Banana</label><br>
+            <input type="radio" id="chips" name="snack" value="Potato Chips">
+            <label for="chips">Potato Chips</label>
+
+            
+            <br/>
+        </fieldset>
+
+        <fieldset>
+            <legend>Drink</legend>
+
+            <br/>
+
+
+            <label for="drink"><strong>Drinks</strong></label><br>
+            
+                <select id="drink" name="drink">
+                    <option class="o" value="Hot Black Tea - Keemun">Hot Black Tea - Keemun</option>
+                
+                </select><br><br>
+            
+            <hr/>
+
+            <input type="checkbox" id="large_drink" name="large_drink" value="Large Drink">
+            <label for="large_drink">Large drink (75¢ extra)</label>
+
+            <br/>
+            <br/>
+
+        </fieldset>
+
+        <br/>
+
+        <button type="submit">Place Order</button>
+    </form>
+</body>
+</html>
