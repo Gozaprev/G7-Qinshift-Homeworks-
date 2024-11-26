@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Contact</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="topnav" id="myTopnav">
+                <a href="../home.html">Home</a>
+                <a href="../aboutPage/about.html">About</a>
+                <a href="../services/services.html">Services</a>
+                <a href="../industries/industries.html">Industries</a>
+                <a href="../Insigths/insights.html">Insights</a>
+                <a href="#">Contact</a>
+
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <h1>Contact Page</h1>
+        <h2>How to contact us</h2>
+
+        <form action="server-endpoint" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+
+        <p>For any buisness or advertising please reach to us at: <a href="mailto:marketing@mail.com">Marketing
+                Department</a></p>
+        <p>Or give us a call at: <a href="tel:+389078123456">+389078123456</a></p>
+
+    </main>
+    <footer>
+        <p>Some copyright info &copy;</p>
+    </footer>
+
+</body>
+
+</html>

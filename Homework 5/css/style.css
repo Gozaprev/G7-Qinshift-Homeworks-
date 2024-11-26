@@ -1,0 +1,142 @@
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+  /* Search Form */
+form {
+    text-align: center;
+}
+
+form label {
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+form input {
+    padding: 5px;
+    font-size: 16px;
+}
+
+form button {
+    padding: 6px 12px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #575757;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+#main-title {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+section h2 {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+section p {
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+section a {
+    display: inline-block;
+    margin: 10px;
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Aside */
+/* aside {
+    background-color: #ddd;
+    padding: 20px;
+    width: 20%;
+    float: right;
+} */
+
+aside {
+    background-color: #ddd;
+    padding: 20px;
+    width: 20%;
+    position: sticky;
+    float: right;
+    /* top: 20px; Distance from the top of the viewport */
+    /* height: fit-content; */
+    /* margin-left: 20px; */
+    /* top: 20px; */
+}
+
+main {
+    padding-right: 20%; /* Adjust the padding to make space for the sticky aside */
+}
+
+
+aside ul {
+    list-style-type: none;
+}
+
+aside li {
+    margin-bottom: 10px;
+}
+
+aside a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+aside a:hover {
+    color: #000;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+footer p {
+    font-size: 14px;
+}
+
