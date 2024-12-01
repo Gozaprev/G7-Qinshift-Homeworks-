@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    height: 95dvh;
+    width: 100%;
+    border: 4px solid black;
+    margin: 10px;
+    /* overflow: hidden; */
+    justify-self: center;
+}
+
+/* Top Row */
+#top-row {
+    height: 70%;
+    width: 100%;
+    overflow: hidden; /* Clear floats */
+    border-bottom: 6px solid black;
+}
+
+#white-box-container {
+    float: left;
+    width: 20%;
+    height: 100%;
+    border-right: 8px solid black;
+}
+
+.smaller-white-box {
+    background-color: beige;
+    height: 40%;
+    width: 100%;
+    border-bottom: 6px solid black;
+}
+
+.bigger-white-box {
+    background-color: beige;
+    height: 60%;
+    width: 100%;
+    border-top: 12px solid black;
+}
+
+.red-box {
+    background-color: red;
+    float: left;
+    width: 80%;
+    height: 100%;
+}
+
+/* Bottom Row */
+#bottom-row {
+    height: 30%;
+    width: 100%;
+    overflow: hidden; 
+    /* Clear floats */
+    /* border: 4px solid black; */
+}
+
+.blue-box {
+    background-color: #4BA4C5;
+    float: left;
+    width: 20%;
+    height: 100%;
+    border-top: 3px solid black;
+    border-right: 8px solid black;
+}
+
+.large-white-box {
+    background-color: beige;
+    float: left;
+    width: 60%;
+    height: 100%;
+    border-top: 3px solid black;
+    border-right: 8px solid black;
+
+}
+
+#white-yellow-box-container {
+    float: left;
+    width: 20%;
+    height: 100%;
+    border-top: 3px solid black;
+    border-left: 6px solid black;
+}
+
+.white-box {
+    background-color: beige;
+    height: 75%;
+    width: 100%;
+    border-bottom: 25px solid black;
+}
+
+.yellow-box {
+    background-color: yellow;
+    height: 25%;
+    width: 100%;
+}
